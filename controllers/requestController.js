@@ -270,8 +270,8 @@ const approveRequest = async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: "aziz81185@gmail.com",
-                pass: 'zjmt hiwq ooec iqkp',
+                user: process.env.USERNAME,
+                pass: process.env.PASSWORD,
             }
         });
 
