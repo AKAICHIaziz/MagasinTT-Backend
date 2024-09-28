@@ -1,6 +1,6 @@
 const Product = require('../models/productSchema')
 const Category = require('../models/categorySchema')
-const Bon = require('../models/BonSchema')
+const BonEntrer = require('../models/BonEntrerSchema')
 
 
 
@@ -80,7 +80,7 @@ const ajouterBon = async (req, res) => {
         const numberOfProducts = products.length;
 
         const newProducts = await Product.insertMany(validProducts);
-        const newBon = new Bon({ NumBon: numBon, NumProd: numberOfProducts })
+        const newBon = new BonEntrer({ NumBon: numBon, NumProd: numberOfProducts })
         await newBon.save()
         res.status(201).json({
             message: "Products added successfully",

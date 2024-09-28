@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-const bonSchema = new Schema(
+const bonEntrerSchema = new Schema(
     {
         NumBon: {
             type: String,
@@ -17,5 +17,5 @@ const bonSchema = new Schema(
 )
 
 
-const Bon = mongoose.model('Bon', bonSchema)
-module.exports = Bon
+const BonEntrer = mongoose.model('BonEntrer', bonEntrerSchema)
+module.exports = BonEntrer
