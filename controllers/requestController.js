@@ -181,8 +181,8 @@ const rejectRequest = async (req, res) => {
         const employeeEmail = employee.email;
 
         const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
+            host: 'process.env.MAIL_HOST',
+            port: process.env.MAIL_PORT,
             secure: true,
             auth: {
                 user: process.env.USERNAME,
@@ -266,8 +266,8 @@ const approveRequest = async (req, res) => {
         const employeeEmail = employee.email;
 
         const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
+            host: 'process.env.MAIL_HOST',
+            port: process.env.MAIL_PORT,
             secure: true,
             auth: {
                 user: process.env.USERNAME,
