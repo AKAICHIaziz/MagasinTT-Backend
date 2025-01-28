@@ -181,7 +181,7 @@ const rejectRequest = async (req, res) => {
         const employeeEmail = employee.email;
 
         const transporter = nodemailer.createTransport({
-            host: 'process.env.MAIL_HOST',
+            host: process.env.MAIL_HOST,
             port: process.env.MAIL_PORT,
             secure: true,
             auth: {
@@ -266,7 +266,7 @@ const approveRequest = async (req, res) => {
         const employeeEmail = employee.email;
 
         const transporter = nodemailer.createTransport({
-            host: 'process.env.MAIL_HOST',
+            host: process.env.MAIL_HOST,
             port: process.env.MAIL_PORT,
             secure: true,
             auth: {
