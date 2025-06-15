@@ -1,3 +1,5 @@
+Frontend Link: https://github.com/AKAICHIaziz/MagasinTT-Frontend
+
 # 📦 MagasinTT Backend
 
 > 🏆 **Projet de Fin d'Année**  
